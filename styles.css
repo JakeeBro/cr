@@ -1,0 +1,278 @@
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	font-family: calibri;
+	background: #FFFFFF;
+	display: grid;
+	grid-template-columns: 12 1fr;
+}
+
+header {
+	position: fixed;
+	margin: 0px;
+	padding: 0px;
+	/*background: #ACC59E;*/
+	/*background: #55AA55;14AB14*/
+	background: #30B730;
+	width: 100%;
+	content: '';
+	display: grid;
+	grid-template-columns: 15% 15% 40% 30%;
+	grid-template-rows: 70px;
+	align-items: center;
+	clear: both;
+}
+
+.title {
+	grid-column: 1;
+	justify-self: right;
+	margin-right: 20px;
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 500;
+	font-size: 40px;
+	font-style: italic;
+}
+
+/*.test-text:before {
+	content: 'hover';
+	color: rgba(0, 0, 0, 0);
+	position: absolute;
+	width: 0;
+	overflow: hidden;
+	transition: 0.3s;
+}
+
+.test-text:hover:before {
+	width: 100%;
+	color: rgba(0, 0, 0, 1.0);
+}*/
+
+.subtitle {
+	grid-column: 2;
+	justify-self: left;
+	padding: 0;
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+}
+
+.logo {
+	grid-column: 3;
+	justify-self: center;
+	height: 80px;
+}
+
+nav {
+	grid-column: 4;
+	display: inline-flex; /*NEEDED FOR "NAV A ONLY" SETUP*/
+	margin-right: 20px;
+/*	border: 1px solid;
+	border-color: white;*/
+}
+
+/*NAV A ONLY SETUP*/
+
+nav a {
+	flex-basis: 1;
+	flex: 1;
+	text-align: center;
+	margin: 5px;
+	padding: 10px;
+	text-transform: none;
+	text-decoration: none;
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	border: 1px solid;
+	border-radius: 5px;
+	border-color: rgba(0, 0, 0, 0.0);
+	background-image: none;
+	background-size: 200%;
+	background-position: right;
+	transition: flex 0.6s;
+}
+
+.nav-active {
+	border-color: white;
+}
+
+nav a:hover {
+	flex: 1.5;
+	background-image: linear-gradient(to left, #6AD46A, #49C449, #6AD46A);
+	background-position: left;
+	border-color: rgba(0, 0, 0, 0.0);
+	transition: 0.6s;
+}
+
+/*UNDERLINE*/
+
+/*nav a::after {
+	content: '';
+	display: block;
+	height: 3px;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0);*/
+	/*top: 0;
+	transition: 0.3s;
+}
+
+nav a:hover::after {
+	width: 100%;
+	background-color: rgba(255, 255, 255, 1.0);
+}*/
+
+.main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 75vh;
+	width: 100%;
+	border: 1px solid;
+	border-color: black;
+	background-color: dimgray;
+}
+
+.welcome {
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	height: 10vh;
+	width: 100%;
+/*	border: 1px solid;
+	border-color: black;*/
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 500;
+	font-size: 70px;
+	color: #30B730;
+}
+
+.welcome-subtitle {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	height: 5vh;
+	width: 100%;
+	padding-top: 10px;
+/*	border: 1px solid;
+	border-color: black;*/
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 500;
+	font-size: 25px;
+	color: black;
+}
+
+/*OLD*/
+
+.title-grid {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.title-text {
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 500;
+	font-size: 50px;
+}
+
+.menu-grid {
+	width: 900;
+	height: auto;
+	margin: 0 auto;
+	display: inline-flex;
+}
+
+/*.logo {
+	width: 100;
+	float: left;
+}*/
+
+.description-grid {
+	display: flex;
+	align-items: center;
+	justify-content: left;
+}
+
+.description-text {
+	color: white;
+	font-family: sans-serif;
+	font-size: 15px;
+	width: 50%;
+}
+
+/*nav {
+	float: right;
+	margin: 10px;
+	border: 3px solid;
+	border-color: #FFFFFF;
+	display: inline-flex;
+	align-items: center;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	display: inline-flex;
+}
+
+nav ul li {
+	list-style: none;
+	float: left;
+	padding: 10px;
+	margin: 0px 30px;
+	padding: 10px 0;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+nav a::after {
+	content: '';
+	display: block;
+	height: 3px;
+	width: 0%;
+	background-color: rgba(0, 0, 0, 0);*/
+	/*top: 0;*/
+	/*transition: 0.3s;
+}
+
+nav a:hover::after {
+	width: 100%;
+	background-color: rgba(255, 255, 255, 1.0);
+}*/
+
+.test-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 120px;
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: gray;
+}
+
+.test-text:before {
+	content: 'hover';
+	color: rgba(0, 0, 0, 0);
+	position: absolute;
+	width: 0;
+	overflow: hidden;
+	transition: 0.3s;
+}
+
+.test-text:hover:before {
+	width: 100%;
+	color: rgba(0, 0, 0, 1.0);
+}

@@ -14,7 +14,8 @@ header {
 	padding: 0px;
 	/*background: #ACC59E;*/
 	/*background: #55AA55;14AB14*/
-	background: #30B730;
+	/*background: #30B730;*/
+	background: #00BFA5;
 	width: 100%;
 	content: '';
 	display: grid;
@@ -102,9 +103,9 @@ nav a {
 
 nav a:hover {
 	flex: 1.5;
-	background-image: linear-gradient(to left, #6AD46A, #49C449, #6AD46A);
+	background-image: linear-gradient(to left, #1DE9B6, #00BFA5, #1DE9B6);
 	background-position: left;
-	border-color: rgba(0, 0, 0, 0.0);
+	border-color: rgba(255, 255, 255, 1.0);
 	transition: 0.6s;
 }
 
@@ -129,11 +130,40 @@ nav a:hover::after {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 75vh;
+	height: fit-content;
 	width: 100%;
-	border: 1px solid;
-	border-color: black;
+	margin-top: 70px;
+/*	border: 1px solid;
+	border-color: black;*/
 	background-color: dimgray;
+}
+
+.slideshow {
+	display: flex;
+	justify-content: center;
+	width: fit-content;
+	height: 50%;
+	overflow: hidden;
+}
+
+.slide-nav {
+	position: absolute;
+	margin-top: 20px;
+	display: flex;
+}
+
+.bar {
+	width: 50px;
+	height: 10px;
+	border: 2px solid #00BFA5;
+	border-radius: 5px;
+	margin: 5px;
+	cursor: pointer;
+}
+
+input[name="r"] {
+	position: absolute;
+	visibility: hidden;
 }
 
 .welcome {
@@ -147,7 +177,7 @@ nav a:hover::after {
 	font-family: 'Ubuntu', sans-serif;
 	font-weight: 500;
 	font-size: 70px;
-	color: #30B730;
+	color: #00BFA5;
 }
 
 .welcome-subtitle {
@@ -165,7 +195,7 @@ nav a:hover::after {
 	color: black;
 }
 
-/*OLD*/
+/*============================================OLD============================================*/
 
 .title-grid {
 	display: flex;

@@ -79,6 +79,7 @@ nav {
 nav a {
 	flex-basis: 1;
 	flex: 1;
+	justify-content: space-between;
 	text-align: center;
 	margin: 5px;
 	padding: 10px;
